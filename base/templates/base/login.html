@@ -1,0 +1,419 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    
+    body {font-family: Arial, Helvetica, sans-serif;}
+    h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+ 
+    .a65 {
+      float:center;
+      margin-left:0;
+
+      
+}
+  
+    
+    
+    
+    
+    
+    
+    .div {
+       float:center;
+       text-align:left;
+       padding: 20px 10px;
+       margin-left:60px;
+       outline: none;
+       border:none;
+       margin-top: 20px;
+       width:90%;
+
+    }
+  
+   
+    .w3-bar-blockA a {  width:100%;
+                text-align:left;
+     display : block;
+       }
+ 
+.w3-bar-blockA a:hover
+{
+   
+   border-bottom: 5px solid blue;
+    background-colour:white;
+   
+}
+
+  .w3-bar-blockA a:active
+{ 
+    width:100%;
+   left :5px;
+   border-bottom: 5px solid green;
+   
+}
+   
+  
+  
+  
+    input[type = text],input[type = password] 
+	
+{
+    float:center;
+    text-align:left;
+    padding: 10px 20px;
+  
+    margin: 5px 2px 12px 13px;
+    width:28%;
+    border-radius: 10px;
+    margin-left :530px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.2s;
+     transition: 0.2s;
+    outline: none;
+    background-color: none;
+
+}
+ 
+input[type=text]:focus {
+  border: 3px solid violet;
+  background-color:pink;
+}
+
+input[type=password]:focus {
+  border: 3px solid violet;
+  background-color:pink;
+}
+
+
+
+.btn1 {
+    float:center;
+    text-align:center;
+    top:250px;
+    padding:11px 70px;
+    width:28%;  
+    border-radius: 10px;
+    background-color:magenta;
+    margin-left :514px;
+    margin-top: -10px;
+    cursor:pointer;
+    border: none;
+    font-size: 15px; 
+}
+
+
+
+    .btn1:hover {
+   background-color:blueviolet;
+     color:aqua;
+       }
+     
+
+ .imgcontainer {
+  text-align: center;
+  margin: 60px 1px 9px 200px;
+  position: relative;
+  font-size: 25px; 
+}
+
+
+img.avatar {
+  width: 11%;
+  border-radius: 150%;
+  margin-left: 188px;
+}
+   
+   .label {
+            font-size: 17px;
+            margin-left: 555px;
+            margin-top: 140px;
+            color:grey;
+   }
+
+
+   .label2 {
+            float:center;
+            font-size: 17px;
+             margin-top: 100px;
+            margin-left: 597px;
+    
+   }
+
+@media (min-width:300px) and (max-width:500px)
+   {
+    .a65 {
+           
+           text-align:center;
+           float:center;
+           font-size:4px;
+          width:100%;
+          background-color:lightgrey;
+    }
+            
+
+
+
+    .div {
+       float:center;
+       text-align:left;
+       padding: 20px 10px;
+       margin-left:42px;
+       margin-top: 20px;
+       width:88%;
+
+    }
+  
+    
+
+    .imgcontainer {
+      image align-content: center;
+      margin-left:130px;
+      margin-top: 74px;  
+      font-size: 25px; 
+      position: relative;
+}
+
+     img.avatar {
+   width: 40%;
+   border-radius: 100%;
+   margin-left:105px;
+  }
+
+.btn1 {
+    
+    padding:14px 40px;
+    width:80%;  
+    margin-left:10px;
+    margin-top: 15px;  
+    font-size: 15px; 
+
+  
+}
+  
+ input[type = text],input[type = password] 
+	
+  {
+      float:center;
+      padding: 10px 14px -10px 10px ;
+      margin-top:25px;
+      width:80%;
+      border-radius: 10px;
+      margin-left:21px;
+  }
+
+   .label {
+            float:center;
+            padding : 1px 1px 5px 5px;
+            font-size: 16px;
+            margin-top: 38px;  
+            margin-left: 35px;
+             
+   }
+
+ 
+
+   .label2 {
+            float:center;
+            font-size: 16px;
+            margin-top: 38px;  
+            margin-left: 50px;
+    
+   }
+        
+   .label3 {
+    float:center;
+    font-size: 14px;
+    margin-top: 68px;  
+    margin-left: 40px;
+
+}   
+
+
+   .h4 {
+            float:center;
+            font-size: 15px;
+            margin-top: 38px;  
+            margin-left: 42px;
+            color: grey;
+
+       
+   }
+
+
+
+  }
+
+
+
+	</style>
+ 		</head>
+
+  <body style = "background-color:white;">
+  
+  <!-- Top container -->
+<div class="w3-bar w3-top w3-grey w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large " onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+  <span class="w3-bar-item w3-right">TOhDo</span>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-grey w3-animate-left" style="z-index:3;width:300px; border:2px solid lightgrey;" id="mySidebar"><br>
+  <div class="w3-container w3-row" >
+    <div class="w3-col s4">
+     
+    </div>
+    <div class="w3-col s8 w3-bar" style="margin-top:13px;">
+    <span> <strong></strong></span>
+    <a href="login" style = "margin-left:80px;border-bottom:2px solid red;" class="w3-bar-item w3-button"><i class="fa fa-user"></i></a> 
+    </div>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h5>Log in to view Your Activity</h5>
+  </div>
+  <div class="w3-bar-blockA">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+  
+       <br><br>
+    </div>
+   </nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+  
+  
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:150px;margin-top:43px;">
+  
+   
+    {% block content %}
+  
+       <div class = "div">
+    
+    <div class="imgcontainer">
+      
+
+    </div>
+         
+  
+    
+
+
+
+
+
+
+
+
+
+      <form action = "#" method = "POST">
+        {% csrf_token %}
+        {% load static %}
+        
+
+        <label class ="label">{{form.username.label}}</label>
+        {{form.username}}
+
+        <labe class ="label">{{form.password.label}}</label>
+        {{form.password}}
+        <br><br>
+
+     <input  type = "submit" class = "btn1" value ="Login">
+    
+     <br>
+     <div class="label3" style="margin-left:650px;color:red;">    
+  
+    </div> 
+
+    <ul class="messages">
+      {% for message in messages %}
+      <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+          {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}Important: {% endif %}
+          {{ messages }}
+      </li>
+      {% endfor %}
+  </ul>
+ 
+     
+     <br><br>
+     <p class ="label2" style="font-size: 13px; color:grey;">NEW TO TOhDO?<a href = "{% url 'register' %}" >CREATE ACCOUNT</a></p>
+        
+      </form>
+     
+    </div>
+
+
+
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+   
+      <!-- Footer -->
+      <div class="a65"  style= " margin-left:150px; padding:12px; margin-top:104px;background-color:lightgrey">
+       <h4 align = "center" > ©TOhDO Inc. </h4>
+      </div>
+      
+
+
+</body>
+ </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock content %}
+

@@ -1,0 +1,79 @@
+{% extends 'base/main.html' %}
+{% block content %}
+
+<div class="header-bar">
+    <h1>Login</h1>
+</div>
+
+<div class="card-body">
+    <form method="POST">
+        {% csrf_token %}
+
+        <label>{{form.username.label}}</label>
+        {{form.username}}
+
+        <label>{{form.password.label}}</label>
+        {{form.password}}
+         <br>
+        <input style = "top:10px;" class="button" type="submit" value="Login">
+    </form>
+    <p>Don't have an account? <a href="{% url 'register' %}">Register</a></p>
+</div>
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+{% extends 'base/main.html' %}
+{% block content %}
+
+<div class="header-bar">
+    <h1>Register</h1>
+</div>
+
+<div class="card-body">
+    <form  method="POST">
+        {% csrf_token %}
+      
+        <p> 
+            <label for="first_name">First Name</label>
+            <input id="first_name" type="text" name="first_name" maxlength="150" required>
+            {{form.first_name}}
+        </p>
+
+        <p> 
+            <label for="last_name">Last Name</label>
+            <input id="last_name" type="text" name="last_name" maxlength="150" required>
+            {{form.last_name}}
+        </p>
+
+
+        <p> <label for="email">Email Address</label>
+            <input id ="email" type="email" name="email"  maxlength="254" required>
+            {{form.email}}
+        </p>
+        
+        
+        <label>{{form.username.label}}</label>
+        {{form.username}}
+
+        <label>{{form.emailaddress.label}}</label>
+        {{form.emailaddress}}
+
+        <label>{{form.password1.label}}</label>
+        {{form.password1}}
+
+        <label>{{form.password2.label}}</label>
+        {{form.password2}}
+        <input style="margin-top:10px ;" class="button" type="submit" value="Register">
+    
+    </form>
+  
+    
+
+    <p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
+</div>
+
+
+
+
+{% endblock content %}
